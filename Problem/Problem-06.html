@@ -18,45 +18,45 @@
 
 
     //해결을 하지못했다 계속 min 값이 0이나왔는데 어디가 문제인지모르고 계속풀다 힘들어서 강의를 보고 풀수있었다.
-    나의문제풀이
-    function solution(arr) {
-      let min = 0;
-      let total = 0;
-      for (let i = 0; i < arr.length; i++) {
+    // 나의문제풀이
+    // function solution(arr) {
+    //   let min = 0;
+    //   let total = 0;
+    //   for (let i = 0; i < arr.length; i++) {
 
-        if (arr[i] % 2 !== 0) {
-          total += arr[i];
-          console.log(total)
-          if (arr[i] > min) {
-            min = i;
-            console.log(min)
-          }
-        }
-        // console.log(`최소값${min}`)
-      }
-    }
+    //     if (arr[i] % 2 !== 0) {
+    //       total += arr[i];
+    //       console.log(total)
+    //       if (arr[i] > min) {
+    //         min = i;
+    //         console.log(min)
+    //       }
+    //     }
+    //     // console.log(`최소값${min}`)
+    //   }
+    // }
 
-    let arr = [12, 77, 38, 41, 53, 92, 85]
+    // let arr = [12, 77, 38, 41, 53, 92, 85]
 
-    console.log(solution(arr))
-
-
+    // console.log(solution(arr))
 
 
 
 
 
-    정답
+
+
+    // 정답
 
     function solution1(arr1) {
       let answer = [];
       let sum = 0;
       let min = Number.MAX_SAFE_INTEGER;
-      for (let x of arr1) {
-        if (x % 2 == 1) {
-          sum += x;
-          if (x < min) {
-            min = x;
+      for (let i of arr1) {
+        if (i % 2 == 1) {
+          sum += i;
+          if (i < min) {
+            min = i;
           }
         }
 

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1. DOM-가져오기</title>
+</head>
+
+<body>
+
+  <div>
+    <button>Button 2</button>
+  </div>
+  <button>Button 1</button>
+  <script>
+    const button = document.querySelector('button')
+
+    // `addEventListener` 로 `click` 이벤트가 발생했을 때 수행할 함수를 넣어준다.
+    document.body.addEventListener('click', e => {
+      console.log(e.currentTarget.textContent) // 버튼 태그 내용이 찍힌다.  내가이벤트탓게엑만 접근하고싶을때 currenttarget을주자
+      // console.log(e.target.textContent)
+    })
+  </script>
+</body>
+
+</html>
