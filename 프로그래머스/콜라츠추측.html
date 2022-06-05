@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function solution(n) {
+
+      let ns = n + ''
+      let arr = [];
+
+      for (let i = 0; i < ns.length; i++) {
+        arr.push(ns[i])
+      }
+      let answer2 = arr.sort(function (a, b) {
+        return b - a;
+      });
+      let answer = answer2.join('')
+      answer = Number(answer)
+      return answer
+    }
+    console.log(solution(118372))
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .parent-box {
+      width: 100vw;
+      height: 100vh;
+      display: grid;
+      grid-template-columns: 4fr 6fr;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+    }
+
+    .box:nth-child(2n) {
+      background-color: yellow;
+    }
+
+    .box:nth-child(2n-1) {
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="parent-box">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</body>
+
+</html>

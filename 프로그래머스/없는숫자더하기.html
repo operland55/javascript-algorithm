@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    function solution(numbers) {
+      let answer = 0;
+      let map = {
+        0: true,
+        1: true,
+        2: true,
+        3: true,
+        4: true,
+        5: true,
+        6: true,
+        7: true,
+        8: true,
+        9: true,
+      }
+
+      numbers.forEach(item => {
+        map[item] = false
+      })
+
+      return answer;
+    }
+
+
+  </script>
+</body>
+
+</html>

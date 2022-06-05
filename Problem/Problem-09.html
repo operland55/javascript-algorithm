@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function solution(fruit) {
+
+
+      for (let i = 0; i <= fruit.length; i++) {
+        if (fruit[i] === 'A') {
+          fruit.splice(i, 1, '#')
+        }
+      }
+
+      return fruit;
+    }
+    let fruit = ['B', 'A', 'N', 'A', 'N', 'A'];
+
+    console.log(solution(fruit))
+
+    // 해결2
+
+    function solution1(s) {
+      let answer = ''
+      for (let x of s) {
+        if (x === 'A') answer += '#'
+        else answer += x
+      }
+
+
+    }
+    let str = 'BANANA'
+    console.log(solution1(str))
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function solution(sizes) {
+      let answer = 0;
+      let 가로 = 0;
+      let 세로 = 0;
+
+      for (let i = 0; i < sizes.length; i++) {
+        if (sizes[i][0] >= sizes[i][1]) {
+          console.log(가로 = Math.max(sizes[i][0], 가로))
+          가로 = Math.max(sizes[i][0], 가로);
+          세로 = Math.max(sizes[i][1], 세로);
+        } else {
+          가로 = Math.max(sizes[i][1], 가로);
+          세로 = Math.max(sizes[i][0], 세로);
+        }
+      }
+
+      answer = 세로 * 가로;
+
+      return answer;
+
+
+    }
+    let arr = [[60, 50], [30, 70], [60, 30], [80, 40]];
+
+    console.log((9).toString(2))
+    console.log(solution(arr))
+  </script>
+</body>
+
+</html>

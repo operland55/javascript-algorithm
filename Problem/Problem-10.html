@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // function solution(str) {
+    //   let que = prompt('알파벳을 입력하세요');
+    //   let count = 0;
+
+    //   for (let i = 0; i < str.length; i++) {
+    //     if (str[i] === que) {
+    //       count++
+    //     }
+    //   }
+    //   return count;
+    // }
+    // let str = prompt('입력하세요');
+
+    // console.log(solution(str))
+
+    // 해결2
+    function solution1(s, t) {
+      let answer = 0;
+      for (let x of s) {
+        if (x === t) answer++;
+      }
+      return answer
+    }
+    let str = 'RQWERQWERQWER'
+    console.log(solution1(str, 'R'))
+  </script>
+</body>
+
+</html>
